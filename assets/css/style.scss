@@ -87,6 +87,10 @@ section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* REVIEW REVIEW REVIEW REVIEW *//* REVIEW REVIEW REVIEW REVIEW */
   gap:20px;
+  a{
+        text-decoration: none;
+        color: $primary;
+      }
     .skill-card {
       background: lighten($bgcolor, 7%);
       padding: 20px;

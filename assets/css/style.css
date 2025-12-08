@@ -79,6 +79,10 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* REVIEW REVIEW REVIEW REVIEW */ /* REVIEW REVIEW REVIEW REVIEW */
   gap: 20px;
 }
+.skills-grid a {
+  text-decoration: none;
+  color: white;
+}
 .skills-grid .skill-card {
   background: rgb(30.85, 30.85, 30.85);
   padding: 20px;

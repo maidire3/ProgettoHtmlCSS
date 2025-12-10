@@ -74,25 +74,44 @@ section {
 }
 
 /* SKILLS */ /* REVIEW REVIEW REVIEW REVIEW */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* REVIEW REVIEW REVIEW REVIEW */ /* REVIEW REVIEW REVIEW REVIEW */
+.skills-flex {
+  display: flex;
+  flex-direction: column;
   gap: 20px;
 }
-.skills-grid a {
+.skills-flex .skill-row {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.skills-flex a {
   text-decoration: none;
   color: white;
 }
-.skills-grid .skill-card {
+.skills-flex .skill-card {
+  margin-top: 15px;
   background: rgb(30.85, 30.85, 30.85);
   padding: 20px;
   text-align: center;
   border-radius: 10px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
-.skills-grid .skill-card:hover {
+.skills-flex .skill-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+.skills-flex .skill-bar {
+  flex: 1;
+  height: 20px;
+  background: #404040;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.skills-flex .fill {
+  height: 100%;
+  background: linear-gradient(135deg, rgb(136, 0, 255), #00d4ff);
+  border-radius: 8px;
+  transition: width 0.8s ease;
 }
 
 /* PROJECTS */
@@ -102,8 +121,9 @@ section {
   gap: 25px;
 }
 .projects-grid .project-card {
+  margin-top: 15px;
   background: rgb(30.85, 30.85, 30.85);
-  padding: 25px;
+  padding: 0px;
   border-radius: 13px;
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -111,6 +131,28 @@ section {
 .projects-grid .project-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+.projects-grid .project-card .card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.projects-grid .project-card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  background: #d9d9d9;
+}
+.projects-grid .project-card .btn {
+  width: 120px;
+  background: linear-gradient(135deg, rgb(136, 0, 255), #00d4ff);
+  margin-top: auto;
+}
+.projects-grid .project-card .btn:hover {
+  opacity: 0.8;
+  transition: transform 0.4s;
+  transform: scale(1.2);
 }
 
 /* CONTACT */
@@ -127,7 +169,7 @@ footer {
 
 /* ANIMATION */
 .fade-in {
-  animation: fade 1s ease forwards;
+  animation: fade 2s ease forwards;
 }
 
 @keyframes fade {

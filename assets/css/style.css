@@ -84,11 +84,18 @@ section {
   align-items: center;
   gap: 25px;
 }
+.skills-flex .skill-row .skill-percent {
+  font-size: 22px;
+  width: 45px;
+  font-weight: bold;
+  color: white;
+}
 .skills-flex a {
   text-decoration: none;
   color: white;
 }
 .skills-flex .skill-card {
+  width: 150px;
   margin-top: 15px;
   background: rgb(30.85, 30.85, 30.85);
   padding: 20px;

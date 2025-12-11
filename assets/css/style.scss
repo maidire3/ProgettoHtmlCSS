@@ -11,9 +11,14 @@ body {
   scroll-behavior: smooth;
 }
 
+h2{
+  margin-top:30px;
+}
+
 /* NAVBAR */
 nav {
   position: sticky;
+  width:100%;
   top: 0;
   background: rgba(0,0,0,0.75);
   backdrop-filter: blur(6px);
@@ -43,22 +48,47 @@ nav {
 }
 
 /* HERO */
-.hero{
+.hero {
   height: 100vh;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   padding: 0 20px;
-  h1{
+
+  /* wrapper centrato contenente titolo, sottotitolo e btn */
+  .hero-content {
+    position: relative;         
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  /* immagine posizionata sopra il blocco .hero-content */
+  .imgmia {
+    position: absolute;
+    left: 50%;
+    bottom: calc(100% + 20px); 
+    transform: translateX(-50%);
+    width: clamp(140px, 16vw, 180px);
+    height: clamp(140px, 16vw, 180px);
+    border-radius: 50%;
+    border: 3px solid rgba(255,255,255,0.12);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+  }
+
+  h1 {
     font-size: 4rem;
     margin-bottom: 10px;
   }
-  .subtitle{
-  font-size: 1.3rem;
-  opacity: 0.8;
-}
+  .subtitle {
+    font-size: 1.3rem;
+    opacity: 0.8;
+  }
+
   .btn{
     padding: 13px 25px;
     background: linear-gradient(135deg, rgb(136, 0, 255), $Secondary);
@@ -73,10 +103,44 @@ nav {
     }
   }
 
+  /* SOCIAL BAR */
+ .social-bar {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%); 
+
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+
+  a {
+    width: 60px;         /* meglio un valore più grande, 6px era troppo piccolo */
+    height: 60px;
+    border: 2px solid rgba(255,255,255,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.1);
+
+    img {
+      width: 60%;
+      height: 60%;
+      object-fit: contain;
+    }
+
+    &:hover {
+      background: rgba(255,255,255,0.2);
+      transition: .2s;
+    }
+  }
+}
 }
 
+
+
 /* SECTIONS */
-section {
+section:not(.hero) {
   padding: 80px 20px;
   max-width: 900px;
   margin: auto;
@@ -174,10 +238,6 @@ section {
   }
 }
 
-/* CONTACT */
-#contact p {
-  font-size: 1.1rem;
-}
 
 /* FOOTER */
 footer {

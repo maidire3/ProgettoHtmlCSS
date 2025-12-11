@@ -223,6 +223,7 @@ section:not(.hero) {
 /* FOOTER */
 .site-footer {
   background: rgb(30.85, 30.85, 30.85);
+  width: 100%;
   padding: 60px 20px;
   text-align: center;
   margin-top: 60px;

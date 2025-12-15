@@ -8,7 +8,7 @@ body {
   margin-top: 50px;
 }
 
-h2 {
+h2::not(.cv-container) {
   margin-top: 30px;
   display: flex;
   flex-direction: column;

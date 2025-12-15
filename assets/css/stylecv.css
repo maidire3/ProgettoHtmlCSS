@@ -12,6 +12,22 @@ body {
   margin: 0 auto;
   padding: 60px 20px;
 }
+.cv-container .cv-header h1 {
+  font-size: 70px;
+}
+.cv-container .cv-header h5 {
+  font-size: 28px;
+}
+.cv-container .cv-header h7 {
+  font-size: 15px;
+}
+.cv-container .cv-header .linkpdf {
+  margin-top: 30px;
+}
+.cv-container .cv-header .linkpdf a {
+  padding: 45px;
+  font-size: 25px;
+}
 .cv-container h1 {
   font-size: 2.8rem;
   margin-bottom: 8px;

@@ -5,6 +5,7 @@
   left: 0;
   right: 0;
   height: 60px;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -22,10 +23,10 @@
   gap: 5px;
 }
 .header .leftnav img {
-  width: 50px;
+  width: 70px;
   height: auto;
 }
-.header .leftnav h2 {
+.header .leftnav h3 {
   display: none;
 }
 .header .dontseeme {
@@ -112,7 +113,7 @@
   .header .menu-icon {
     display: none;
   }
-  .header .leftnav h2 {
+  .header .leftnav h3 {
     display: flex;
   }
   .header .dontseeme {

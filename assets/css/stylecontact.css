@@ -5,6 +5,7 @@ body {
   gap: 25px;
   min-height: 100vh;
   justify-content: space-between;
+  margin-top: 80px;
 }
 
 .form-container {
@@ -68,6 +69,11 @@ button:hover {
   background-color: #4f46e5;
 }
 
+@media (min-width: 750px) {
+  body {
+    margin-top: 0px;
+  }
+}
 @media (max-width: 480px) {
   .form-container {
     padding: 20px;

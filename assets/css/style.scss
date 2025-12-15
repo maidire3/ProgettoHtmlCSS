@@ -9,6 +9,7 @@ body {
   background: $bgcolor;
   color: $primary;
   scroll-behavior: smooth;
+  margin-top:50px;
 }
 
 h2{
@@ -19,7 +20,7 @@ h2{
 }
 
 /* NAVBAR */
-nav {
+/* nav {
   position: sticky;
   width:100%;
   top: 0;
@@ -48,7 +49,7 @@ nav {
       }
     }
   }
-}
+} */
 
 /* HERO */
 .hero {
@@ -308,3 +309,9 @@ section:not(.hero) {
   to{opacity: 1; transform: translateY(0);}
 }
 
+
+@media (min-width: 750px) {
+  body{
+    margin-top: 0px;
+  }
+}

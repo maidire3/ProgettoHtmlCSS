@@ -315,3 +315,15 @@ section:not(.hero) {
     margin-top: 0px;
   }
 }
+
+@media (max-width: 400px) {
+  .hero .social-bar {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero h1 .last-name {
+    display: block; // forzi il cognome a andare a capo
+  }
+}

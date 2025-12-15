@@ -1,31 +1,177 @@
-/* NAVBAR */
-$Secondary: #00d4ff;
+$primary: white;
+$secondary: #00d4ff;
+$bgcolor: #0d0d0d;
+$maxheight: 500px;
+$navcolor: grey;
 
-nav {
-  position: sticky;
-  width:100%;
+a {
+  color: $primary;
+}
+
+.header {
+  position: fixed;
   top: 0;
-  background: rgba(0,0,0,0.75);
+  left: 0;
+  right: 0;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  
+
+  background: rgba(0, 0, 0, 0.75);
   backdrop-filter: blur(6px);
-  padding: 30px 0;
-  z-index: 1;
-  ul{
-    display: flex;
+  z-index: 1000;
+
+  .leftnav{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 10px;
+
+    img{
+    width:50px;
+    height: auto;
+    margin-right: 10px;
+    }
+    h2{
+      display: none;
+    }
+  }
+
+  .dontseeme{
+    padding: 30px;
+    visibility: hidden;
+  }
+
+  ul {
     margin: 0;
     padding: 0;
-    justify-content: center;
-    gap: 30px;
     list-style: none;
-    
-    li{
-      a{
-        text-decoration: none;
-        color: white;
-        font-weight: bold;
-        transition: color 0.2s;
-        font-size: 23px;
-        &:hover{
-          color: $Secondary;
+    overflow: hidden;
+
+    a {
+      display: block;
+      text-decoration: none;
+      padding: 20px;
+
+      &:hover {
+        color: $secondary;
+      }
+    }
+  }
+
+  .menu {
+    position: absolute;
+    top: 60px; // subito sotto l'header
+    left: 0;
+    right: 0;
+
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(6px);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .menu-icon {
+    padding: 25px;
+    cursor: pointer;
+
+    .nav-icon {
+      background-color: $navcolor;
+      display: block;
+      height: 2px;
+      width: 14px;
+      position: relative;
+
+      &::before,
+      &::after {
+        background-color: $navcolor;
+        content: "";
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        transition: all 0.2s ease-out;
+      }
+
+      &::before {
+        top: 5px;
+      }
+
+      &::after {
+        top: -5px;
+      }
+    }
+  }
+
+  .menu-btn {
+    display: none;
+
+    &:checked {
+      ~ .menu {
+        max-height: $maxheight;
+      }
+
+      ~ .menu-icon {
+        .nav-icon {
+          background-color: transparent;
+
+          &::before {
+            transform: rotate(-45deg);
+            top: 0;
+          }
+
+          &::after {
+            transform: rotate(45deg);
+            top: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 750px) {
+  .header {
+    position:sticky;
+    flex-direction: row;
+
+    .menu-icon {
+      display: none;
+    }
+
+    .leftnav{
+      h2{
+        display:flex;
+      }
+    }
+    .dontseeme{
+      display: none;
+    }
+
+    .menu {
+      position: static;        // torna nel flusso
+      max-height: none;        // niente animazione
+      display: flex;
+      align-items: center;
+      background: none;
+      backdrop-filter: none;
+    }
+
+    ul {
+      display: flex;
+      justify-content: center;
+
+      li {
+        a {
+          padding: 20px 30px;
+          &:hover{
+          color: $secondary;
+        }
         }
       }
     }

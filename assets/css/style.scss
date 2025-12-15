@@ -9,7 +9,6 @@ body {
   background: $bgcolor;
   color: $primary;
   scroll-behavior: smooth;
-  margin-top:50px;
 }
 
 h2::not(.cv-container){ //non deve modificare il cv container del CV.html

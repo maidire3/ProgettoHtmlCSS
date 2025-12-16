@@ -139,19 +139,61 @@ section:not(.hero) {
         text-decoration: none;
         color: $primary;
       }
-    .skill-card {
-      width:150px;
-      margin-top:15px;
-      background: lighten($bgcolor, 7%);
-      padding: 20px;
-      text-align: center;
-      border-radius: 10px;
-      transition: transform .3s, box-shadow .3s;
-        &:hover{
-          transform: translateY(-6px);
-          box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-        }
-    }
+
+.skill-card.btn{ // BTN SUCCESS DI BOOTSTRAP
+  width:150px;
+  padding:20px;
+  border: 1px solid green;
+  color: green;
+  transition: color .3s, transform .3s, box-shadow .3s;
+  &:hover{
+    color: white;
+  }
+}
+
+.skill-card {
+  width:150px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  color: $primary;
+  position: relative;
+  overflow: hidden;
+  transition: transform .3s, box-shadow .3s;
+  border: 1px solid gray;
+
+  &.html {
+    background: linear-gradient(135deg, #f16529, #e34c26); 
+  }
+  &.css { 
+    background: linear-gradient(135deg, #2965f1, #264de4);
+    &:hover{
+      transform:rotate(360deg);
+    } 
+  }
+
+  &:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255,255,255,0.1);
+    transform: rotate(25deg) translateX(-100%);
+    transition: transform 0.5s ease;
+  }
+
+  &:hover::after {
+    transform: rotate(25deg) translateX(100%);
+  }
+}
+
     .skill-bar {
     flex: 1;
     height: 20px;
@@ -166,6 +208,7 @@ section:not(.hero) {
     transition: width 0.8s ease;
   }
 }
+
 
 /* PROJECTS */
 .projects-grid{

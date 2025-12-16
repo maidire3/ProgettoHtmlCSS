@@ -1,3 +1,6 @@
+$Secondary: #00d4ff;
+$btncolor: linear-gradient(135deg, rgb(136, 0, 255), $Secondary);
+
     body{
         display:flex;
         flex-direction: column;
@@ -42,12 +45,11 @@
       border-radius: 10px;
       font-size: 15px;
       transition: border 0.2s ease;
-    }
-
-    input:focus, textarea:focus {
-      border-color: #6366f1;
+      &:focus{
+        border-color: rgb(136, 0, 255);
       outline: none;
       box-shadow: 0 0 0 3px rgba(99,102,241,0.2);
+      }
     }
 
     textarea {
@@ -59,15 +61,14 @@
       padding: 14px;
       border: none;
       border-radius: 10px;
-      background: #6366f1;
+      background: $btncolor;
       font-size: 16px;
       font-weight: 600;
       cursor: pointer;
-      transition: background-color 0.2s ease;
-    }
-
-    button:hover {
-      background-color: #4f46e5;
+      transition: filter 0.2s ease;
+      &:hover{
+        filter:brightness(80%)
+      }
     }
 
     @media (min-width: 750px) {

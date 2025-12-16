@@ -1,6 +1,7 @@
 $primary: white;
 $Secondary: #00d4ff;
 $bgcolor: #0d0d0d;
+$btncolor: linear-gradient(135deg, rgb(136, 0, 255), $Secondary);
 
 
 body {
@@ -62,7 +63,7 @@ h2:not(.cv-container h2){ //non deve modificare il cv container del CV.html
 
   .btn{
     padding: 13px 25px;
-    background: linear-gradient(135deg, rgb(136, 0, 255), $Secondary);
+    background: $btncolor;
     border-radius: 13px;
     color: $primary;
     text-decoration: none;
@@ -206,7 +207,7 @@ section:not(.hero) {
     }
     }
     .bgbtn{
-      background: linear-gradient(135deg, rgb(136, 0, 255), $Secondary);
+      background: $btncolor;
     }
 
     .card-img-top {

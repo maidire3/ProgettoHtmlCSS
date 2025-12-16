@@ -42,9 +42,8 @@ input, textarea {
   font-size: 15px;
   transition: border 0.2s ease;
 }
-
 input:focus, textarea:focus {
-  border-color: #6366f1;
+  border-color: rgb(136, 0, 255);
   outline: none;
   box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
 }
@@ -58,15 +57,14 @@ button {
   padding: 14px;
   border: none;
   border-radius: 10px;
-  background: #6366f1;
+  background: linear-gradient(135deg, rgb(136, 0, 255), #00d4ff);
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: filter 0.2s ease;
 }
-
 button:hover {
-  background-color: #4f46e5;
+  filter: brightness(80%);
 }
 
 @media (min-width: 750px) {

@@ -11,7 +11,7 @@ body {
   scroll-behavior: smooth;
 }
 
-h2::not(.cv-container){ //non deve modificare il cv container del CV.html
+h2:not(.cv-container h2){ //non deve modificare il cv container del CV.html
   margin-top:30px;
   display: flex;
   flex-direction: column;
@@ -70,7 +70,7 @@ h2::not(.cv-container){ //non deve modificare il cv container del CV.html
     &:hover{
       opacity: 0.8;
       transition: transform 0.4s;
-      transform: scale(1.2);
+      transform: scale(1.05);
     }
   }
 
@@ -117,7 +117,7 @@ section:not(.hero) {
   margin: auto;
 }
 
-/* SKILLS */ /* REVIEW REVIEW REVIEW REVIEW */
+/* SKILLS */ 
 .skills-flex{
   display: flex;
   flex-direction: column;
@@ -202,7 +202,7 @@ section:not(.hero) {
        &:hover{
       opacity: 0.8;
       transition: transform 0.4s;
-      transform: scale(1.2);
+      transform: scale(1.05);
     }
     }
     .bgbtn{

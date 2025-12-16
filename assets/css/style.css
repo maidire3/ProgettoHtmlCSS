@@ -7,7 +7,7 @@ body {
   scroll-behavior: smooth;
 }
 
-h2::not(.cv-container) {
+h2:not(.cv-container h2) {
   margin-top: 30px;
   display: flex;
   flex-direction: column;
@@ -65,7 +65,7 @@ h2::not(.cv-container) {
 .hero .btn:hover {
   opacity: 0.8;
   transition: transform 0.4s;
-  transform: scale(1.2);
+  transform: scale(1.05);
 }
 .hero .social-bar {
   position: absolute;
@@ -187,7 +187,7 @@ section:not(.hero) {
 .projects-grid .project-card .btn:hover {
   opacity: 0.8;
   transition: transform 0.4s;
-  transform: scale(1.2);
+  transform: scale(1.05);
 }
 .projects-grid .project-card .bgbtn {
   background: linear-gradient(135deg, rgb(136, 0, 255), #00d4ff);

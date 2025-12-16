@@ -1,4 +1,4 @@
-# DaveCava - Portfolio Personale
+# Davide Cavallaro - Portfolio Personale
 
 ## Descrizione
 Questo è il mio sito personale/portfolio realizzato con **HTML, CSS (SCSS) e Bootstrap**.  
@@ -49,7 +49,7 @@ Mostra chi sono, le mie competenze, i miei progetti e un modo per contattarmi.
 ---
 
 ## 📸 Anteprima
-*(inserire screenshot o gif del sito se vuoi)*
+![Anteprima del sito](assets/img/Projectpersonale.png)
 
 ---
 

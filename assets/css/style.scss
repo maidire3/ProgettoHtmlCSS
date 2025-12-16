@@ -87,7 +87,7 @@ h2:not(.cv-container h2){ //non deve modificare il cv container del CV.html
   gap: 0;
 
   a {
-    width: 60px;         /* meglio un valore più grande, 6px era troppo piccolo */
+    width: 60px;         
     height: 60px;
     border: 2px solid rgba(255,255,255,0.7);
     display: flex;
@@ -286,6 +286,7 @@ section:not(.hero) {
 }
 
 
+/* RESPONSIVE */
 @media (min-width: 750px) {
   body{
     margin-top: 0px;
@@ -300,6 +301,6 @@ section:not(.hero) {
 
 @media (max-width: 600px) {
   .hero h1 .last-name {
-    display: block; // forzi il cognome a andare a capo
+    display: block; // forza il cognome a andare a capo
   }
 }

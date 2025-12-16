@@ -105,6 +105,7 @@
   top: 0;
 }
 
+/* RESPONSIVE */
 @media (min-width: 825px) {
   .header {
     position: sticky;

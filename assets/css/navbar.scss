@@ -67,7 +67,7 @@ $navcolor: grey;
 
   .menu {
     position: absolute;
-    top: 60px; // subito sotto l'header
+    top: 60px; 
     left: 0;
     right: 0;
 
@@ -137,6 +137,7 @@ $navcolor: grey;
   }
 }
 
+/* RESPONSIVE */
 @media (min-width: 825px) {
   .header {
     position:sticky;

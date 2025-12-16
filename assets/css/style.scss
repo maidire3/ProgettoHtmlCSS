@@ -198,7 +198,6 @@ section:not(.hero) {
 
     .btn{
       width:120px;
-      background: linear-gradient(135deg, rgb(136, 0, 255), $Secondary);
       margin-top:auto;
        &:hover{
       opacity: 0.8;
@@ -206,6 +205,15 @@ section:not(.hero) {
       transform: scale(1.2);
     }
     }
+    .bgbtn{
+      background: linear-gradient(135deg, rgb(136, 0, 255), $Secondary);
+    }
+
+    .card-img-top {
+    width: 100%;
+    height: 250px;      
+    object-fit: cover; 
+  }
   }
 }
 

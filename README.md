@@ -3,6 +3,7 @@
 ## Descrizione
 Questo è il mio sito personale/portfolio realizzato con **HTML, CSS (SCSS) e Bootstrap**.  
 Mostra chi sono, le mie competenze, i miei progetti e un modo per contattarmi.
+Se vuoi vedere il mio sito, è online su Github Pages a questo link: [https://maidire3.github.io/ProgettoHtmlCSS/](https://maidire3.github.io/ProgettoHtmlCSS/)
 
 ---
 
@@ -28,7 +29,7 @@ Mostra chi sono, le mie competenze, i miei progetti e un modo per contattarmi.
 ## 🔗 Link
 - GitHub: [https://github.com/maidire3/ProgettoHtmlCSS](https://github.com/maidire3/ProgettoHtmlCSS)  
 - Linkedin: [https://www.linkedin.com/in/davide-cavallaro-89aa811a1/](https://www.linkedin.com/in/davide-cavallaro-89aa811a1/)  
-
+- GitHub Pages: [https://maidire3.github.io/ProgettoHtmlCSS/](https://maidire3.github.io/ProgettoHtmlCSS/)
 ---
 
 ## ⚡ Funzionalità aggiuntive

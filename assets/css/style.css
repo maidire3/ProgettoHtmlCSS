@@ -233,56 +233,6 @@ section:not(.hero) {
   object-fit: cover;
 }
 
-/* FOOTER */
-.site-footer {
-  background: rgb(30.85, 30.85, 30.85);
-  width: 100%;
-  padding: 60px 20px;
-  text-align: center;
-  margin-top: 60px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-.site-footer h3 {
-  font-size: 1.9rem;
-  margin-bottom: 8px;
-}
-.site-footer p {
-  font-size: 1rem;
-  opacity: 0.75;
-  margin-bottom: 25px;
-}
-.site-footer .footer-socials {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-bottom: 28px;
-}
-.site-footer .footer-socials a {
-  width: 50px;
-  height: 50px;
-  border: 2px solid rgba(255, 255, 255, 0.7);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.05);
-  transition: 0.25s ease;
-}
-.site-footer .footer-socials a:hover {
-  background: rgba(255, 255, 255, 0.15);
-  transform: translateY(-4px);
-}
-.site-footer .footer-socials a img {
-  width: 60%;
-  height: 60%;
-  object-fit: contain;
-}
-.site-footer .footer-copy {
-  font-size: 0.9rem;
-  opacity: 0.5;
-  margin-top: 10px;
-}
-
 /* ANIMATION */
 .fade-in {
   animation: fade 2s ease forwards;

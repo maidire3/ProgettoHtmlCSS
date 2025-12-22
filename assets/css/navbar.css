@@ -1,9 +1,13 @@
-.header {
-  font-size: 20px;
+.stick {
   position: sticky;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1000;
+}
+
+.navcaption {
+  font-size: 20px;
   height: 60px;
   width: 100%;
   display: flex;
@@ -13,33 +17,33 @@
   padding: 35px 0px;
   background: rgba(0, 0, 0, 0.75);
   backdrop-filter: blur(6px);
-  z-index: 1000;
+  z-index: 10;
 }
-.header .leftnav {
+.navcaption .leftnav {
   display: flex;
   flex-direction: row;
   align-items: center;
   padding: 0 10px;
   gap: 5px;
 }
-.header .leftnav img {
+.navcaption .leftnav img {
   width: 70px;
   height: auto;
 }
-.header .leftnav h3 {
+.navcaption .leftnav h3 {
   display: none;
 }
-.header .dontseeme {
+.navcaption .dontseeme {
   padding: 30px;
   visibility: hidden;
 }
-.header ul {
+.navcaption ul {
   margin: 0;
   padding: 0;
   list-style: none;
   overflow: hidden;
 }
-.header ul a {
+.navcaption ul a {
   display: block;
   color: white;
   text-decoration: none;
@@ -47,10 +51,10 @@
   font-weight: bold;
   transition: color 0.2s;
 }
-.header ul a:hover {
+.navcaption ul a:hover {
   color: #00d4ff;
 }
-.header .menu {
+.navcaption .menu {
   position: absolute;
   top: 60px;
   left: 0;
@@ -61,18 +65,18 @@
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
-.header .menu-icon {
+.navcaption .menu-icon {
   padding: 25px;
   cursor: pointer;
 }
-.header .menu-icon .nav-icon {
+.navcaption .menu-icon .nav-icon {
   background-color: grey;
   display: block;
   height: 2px;
   width: 14px;
   position: relative;
 }
-.header .menu-icon .nav-icon::before, .header .menu-icon .nav-icon::after {
+.navcaption .menu-icon .nav-icon::before, .navcaption .menu-icon .nav-icon::after {
   background-color: grey;
   content: "";
   display: block;
@@ -81,47 +85,47 @@
   position: absolute;
   transition: all 0.2s ease-out;
 }
-.header .menu-icon .nav-icon::before {
+.navcaption .menu-icon .nav-icon::before {
   top: 5px;
 }
-.header .menu-icon .nav-icon::after {
+.navcaption .menu-icon .nav-icon::after {
   top: -5px;
 }
-.header .menu-btn {
+.navcaption .menu-btn {
   display: none;
 }
-.header .menu-btn:checked ~ .menu {
+.navcaption .menu-btn:checked ~ .menu {
   max-height: 500px;
 }
-.header .menu-btn:checked ~ .menu-icon .nav-icon {
+.navcaption .menu-btn:checked ~ .menu-icon .nav-icon {
   background-color: transparent;
 }
-.header .menu-btn:checked ~ .menu-icon .nav-icon::before {
+.navcaption .menu-btn:checked ~ .menu-icon .nav-icon::before {
   transform: rotate(-45deg);
   top: 0;
 }
-.header .menu-btn:checked ~ .menu-icon .nav-icon::after {
+.navcaption .menu-btn:checked ~ .menu-icon .nav-icon::after {
   transform: rotate(45deg);
   top: 0;
 }
 
 /* RESPONSIVE */
 @media (min-width: 825px) {
-  .header {
+  .navcaption {
     position: sticky;
     flex-direction: row;
   }
-  .header .menu-icon {
+  .navcaption .menu-icon {
     display: none;
   }
-  .header .leftnav h3 {
+  .navcaption .leftnav h3 {
     margin-top: 5px;
     display: flex;
   }
-  .header .dontseeme {
+  .navcaption .dontseeme {
     display: none;
   }
-  .header .menu {
+  .navcaption .menu {
     position: static;
     max-height: none;
     display: flex;
@@ -129,14 +133,14 @@
     background: none;
     backdrop-filter: none;
   }
-  .header ul {
+  .navcaption ul {
     display: flex;
     justify-content: center;
   }
-  .header ul li a {
+  .navcaption ul li a {
     padding: 20px 30px;
   }
-  .header ul li a:hover {
+  .navcaption ul li a:hover {
     color: #00d4ff;
   }
 }/*# sourceMappingURL=navbar.css.map */

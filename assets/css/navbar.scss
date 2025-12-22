@@ -4,13 +4,16 @@ $bgcolor: #0d0d0d;
 $maxheight: 500px;
 $navcolor: grey;
 
-
-.header {
-  font-size: 20px;
-  position: sticky;
+.stick{
+   position:sticky;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1000;
+}
+
+.navcaption {
+  font-size: 20px;
   height: 60px;
   width:100%;
 
@@ -23,7 +26,7 @@ $navcolor: grey;
 
   background: rgba(0, 0, 0, 0.75);
   backdrop-filter: blur(6px);
-  z-index: 1000;
+  z-index: 10;
 
   .leftnav{
     display:flex;
@@ -139,7 +142,7 @@ $navcolor: grey;
 
 /* RESPONSIVE */
 @media (min-width: 825px) {
-  .header {
+  .navcaption {
     position:sticky;
     flex-direction: row;
 

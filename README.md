@@ -29,9 +29,14 @@ Se vuoi vedere il mio sito, è online su Github Pages a questo link: [https://ma
 
 ## 🔗 Link
 - GitHub: [https://github.com/maidire3/ProgettoHtmlCSS](https://github.com/maidire3/ProgettoHtmlCSS)  
+<<<<<<< HEAD
 - Linkedin: [https://www.linkedin.com/in/davide-cavallaro-89aa811a1/](https://www.linkedin.com/in/davide-cavallaro-89aa811a1/)
 - GitHub Pages: [https://maidire3.github.io/ProgettoHtmlCSS/](https://maidire3.github.io/ProgettoHtmlCSS/)  
 
+=======
+- Linkedin: [https://www.linkedin.com/in/davide-cavallaro-89aa811a1/](https://www.linkedin.com/in/davide-cavallaro-89aa811a1/)  
+- GitHub Pages: [https://maidire3.github.io/ProgettoHtmlCSS/](https://maidire3.github.io/ProgettoHtmlCSS/)
+>>>>>>> c8d2a9fe4485b8aca71066ea0c487a2e679977f5
 ---
 
 ## ⚡ Funzionalità aggiuntive

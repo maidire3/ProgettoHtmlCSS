@@ -6,8 +6,11 @@ $btncolor: linear-gradient(135deg, rgb(136, 0, 255), $Secondary);
         flex-direction: column;
         align-items: center;
         gap:25px;
-        min-height: 100vh;
         justify-content: space-between;
+    }
+
+    #contact{
+      min-height: 100vh;
     }
     
     

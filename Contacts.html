@@ -1,35 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio di Davide Cavallaro — sviluppatore web specializzato in interfacce moderne e codice pulito.">
     <!-- OPEN GRAPH META TAGS -->
     <meta property="og:title" content="Davide Cavallaro | Web Developer">
     <meta property="og:description" content="Portfolio personale di Davide Cavallaro. Sviluppatore web orientato a UI moderne e codice pulito.">
-    <meta property="og:image" content="https://github.com/maidire3/ProgettoHtmlCSS/blob/master/assets/img/Projectpersonale.png">
+    <meta property="og:image" content="https://maidire3.github.io/ProgettoHtmlCSS/assets/img/Projectpersonale.png">
     <meta property="og:url" content="https://github.com/maidire3/ProgettoHtmlCSS">
     <meta property="og:type" content="website">
 
-    <title>Contattami</title>
+    <title>Contattami | Davide Cavallaro Web Developer</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/stylecontact.css">
     <link rel="stylesheet" href="assets/css/navbar.css">
     <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
 </head>
 <body>
 
-    <!-- NAVBAR -->
-  <nav class="header">
+  <!-- NAVBAR -->
+  <header>
+    <nav class="header">
         <input type="checkbox" class="menu-btn" id="menu-btn">
         <label for="menu-btn" class="menu-icon">
             <span class="nav-icon"></span>
         </label>
         <div class="leftnav">
-          <a href="#"> <img src="assets/img/favicon.png" alt="Immagine cartoon di Davide Cavallaro"> </a>
+          <a href="index.html"> <img src="assets/img/favicon.png" alt="Immagine cartoon di Davide Cavallaro"> </a>
           <h3>Davide</h3>
         </div>
-
         <ul class="menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="index.html#about">Chi sono</a></li>
@@ -38,14 +39,15 @@
             <li><a href="CV.html">CV</a></li>
             <li><a href="Contacts.html">Contatti</a></li>
         </ul>
-
         <div class="dontseeme"></div>
     </nav>
+  </header>
   
     <!-- FORM -->
-     
+  <main>
+    <section id="contact">
     <form id="form" class="form-container fade-in">
-    <div class="form-title">Contattami</div>
+    <h1 class="form-title">Contattami</h1>
 
     <div>
       <label for="name">Nome</label>
@@ -63,7 +65,10 @@
     </div>
 
     <button type="submit">Invia</button>
-  </form>
+    </form>
+  </section>
+
+  </main>
 
    <!-- FOOTER -->
   <footer class="site-footer">

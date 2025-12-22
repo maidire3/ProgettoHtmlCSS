@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio di Davide Cavallaro — sviluppatore web specializzato in interfacce moderne e codice pulito.">
     <!-- OPEN GRAPH META TAGS -->
     <meta property="og:title" content="Davide Cavallaro | Web Developer">
     <meta property="og:description" content="Portfolio personale di Davide Cavallaro. Sviluppatore web orientato a UI moderne e codice pulito.">
-    <meta property="og:image" content="https://github.com/maidire3/ProgettoHtmlCSS/blob/master/assets/img/Projectpersonale.png">
+    <meta property="og:image" content="https://maidire3.github.io/ProgettoHtmlCSS/assets/img/Projectpersonale.png">
     <meta property="og:url" content="https://github.com/maidire3/ProgettoHtmlCSS">
     <meta property="og:type" content="website">
 
@@ -20,16 +21,16 @@
 <body>
 
   <!-- NAVBAR -->
-  <nav class="header">
+  <header>
+    <nav class="header">
         <input type="checkbox" class="menu-btn" id="menu-btn">
         <label for="menu-btn" class="menu-icon">
             <span class="nav-icon"></span>
         </label>
         <div class="leftnav">
-          <a href="#"> <img src="assets/img/favicon.png" alt="Immagine cartoon di Davide Cavallaro"> </a>
+          <a href="index.html"> <img src="assets/img/favicon.png" alt="Immagine cartoon di Davide Cavallaro"> </a>
           <h3>Davide</h3>
         </div>
-
         <ul class="menu">
             <li><a href="index.html">Home</a></li>
             <li><a href="index.html#about">Chi sono</a></li>
@@ -38,11 +39,12 @@
             <li><a href="CV.html">CV</a></li>
             <li><a href="Contacts.html">Contatti</a></li>
         </ul>
-
         <div class="dontseeme"></div>
     </nav>
+  </header>
 
 
+<main>
   <!-- HERO -->
 <section id="home" class="hero fade-in">
   <div class="hero-content">
@@ -55,10 +57,10 @@
   </div>
 
   <!-- SOCIALBAR -->
-  <div class="social-bar">
+  <aside class="social-bar">
     <a href="https://www.linkedin.com/in/davide-cavallaro-89aa811a1/" target="_blank" rel="noopener noreferrer"><img src="assets/img/linkedin-ico.png" alt="Linkedin"></a>
     <a href="https://github.com/maidire3" target="_blank" rel="noopener noreferrer"><img src="assets/img/github-mark-white.png" alt="Github"></a>
-  </div>
+  </aside>
 </section>
 
   <!-- ABOUT -->
@@ -79,59 +81,59 @@
   <div class="skills-flex">
 
     <!-- Skill HTML -->
-    <div class="skill-row">
+    <article class="skill-row">
       <a href="#skills" class="skill-card html">HTML</a>
       <div class="skill-bar">
         <div class="fill" style="width: 95%"></div>
       </div>
       <span class="skill-percent">95%</span>
-    </div>
+    </article>
 
     <!-- Skill CSS -->
-    <div class="skill-row">
+    <article class="skill-row">
       <a href="#skills" class="skill-card css">CSS</a>
       <div class="skill-bar">
         <div class="fill" style="width: 90%"></div>
       </div>
       <span class="skill-percent">90%</span>
-    </div>
+    </article>
 
     <!-- Skill C -->
-    <div class="skill-row">
+    <article class="skill-row">
       <a href="#skills" class="skill-card">C</a>
       <div class="skill-bar">
         <div class="fill" style="width: 85%"></div>
       </div>
       <span class="skill-percent">85%</span>
-    </div>
+    </article>
 
     <!-- Skill Java -->
-    <div class="skill-row">
+    <article class="skill-row">
       <a href="#skills" class="skill-card">Java</a>
       <div class="skill-bar">
         <div class="fill" style="width: 35%"></div>
       </div>
       <span class="skill-percent">35%</span>
-    </div>
+    </article>
 
     <!-- Skill Bootstrap -->
-    <div class="skill-row">
+    <article class="skill-row">
       <a href="https://getbootstrap.com/docs/5.3/components/buttons/#outline-buttons" 
       target="_blank" rel="noopener noreferrer" class="btn skill-card btn-outline-success">Bootstrap </a>
       <div class="skill-bar">
         <div class="fill" style="width: 85%"></div>
       </div>
       <span class="skill-percent">85%</span>
-    </div>
+    </article>
 
     <!-- Skill Javascript -->
-    <div class="skill-row">
+    <article class="skill-row">
       <a href="#skills" class="skill-card">Javascript</a>
       <div class="skill-bar">
         <div class="fill" style="width: 15%"></div>
       </div>
       <span class="skill-percent">15%</span>
-    </div>
+    </article>
   </div>
 </section>
 
@@ -143,7 +145,7 @@
   <div class="projects-grid">
 
     <!-- Card Personal Website -->
-    <div class="project-card">
+    <article class="project-card">
       <div class="card">
         <img src="assets/img/Projectpersonale.png" class="card-img-top" alt="Preview Sito Web Personale di Davide Cavallaro">
         <div class="card-body">
@@ -152,10 +154,10 @@
           <a href="https://github.com/maidire3/ProgettoHtmlCSS" class="btn btn-primary bgbtn" target="_blank" rel="noopener noreferrer">Scopri</a>
         </div>
       </div>
-    </div>
+    </article>
 
     <!-- Card Java Plugin Work in progress -->
-    <div class="project-card">
+    <article class="project-card">
       <div class="card">
         <img src="assets/img/java-logo-1280x720-1-768x432.jpg" class="card-img-top" alt="Java Logo">
         <div class="card-body">
@@ -165,9 +167,10 @@
           <a href="#" class="btn btn-secondary disabled">Non disponibile</a>
         </div>
       </div>
-    </div>
+    </article>
   </div>
 </section>
+</main>
 
    <!-- FOOTER -->
   <footer class="site-footer">

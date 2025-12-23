@@ -3,19 +3,19 @@ $bgcolor: #0d0d0d;
 $accent: #00d4ff;
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   background: $bgcolor;
   color: $primary;
 }
 
-
-
-
 .cv-container {
   max-width: 900px;
   margin: 0 auto;
-  
+  flex:1;
   padding: 60px 20px;
 
   .cv-header{
